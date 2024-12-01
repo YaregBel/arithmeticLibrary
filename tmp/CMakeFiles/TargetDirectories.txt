@@ -1,0 +1,3 @@
+/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles/run.dir
+/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles/edit_cache.dir
+/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles/rebuild_cache.dir
