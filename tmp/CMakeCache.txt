@@ -148,7 +148,22 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=arithmeticLibrary
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=0.0.1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -223,6 +238,15 @@ Project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/yareg/Documents/Projects/arithmeticLibrary
+
+//Value Computed by CMake
+arithmeticLibrary_BINARY_DIR:STATIC=/home/yareg/Documents/Projects/arithmeticLibrary/tmp
+
+//Value Computed by CMake
+arithmeticLibrary_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+arithmeticLibrary_SOURCE_DIR:STATIC=/home/yareg/Documents/Projects/arithmeticLibrary
 
 
 ########################

@@ -72,28 +72,28 @@ include CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/codegen:
 .PHONY : CMakeFiles/run.dir/codegen
 
-CMakeFiles/run.dir/main.cpp.o: CMakeFiles/run.dir/flags.make
-CMakeFiles/run.dir/main.cpp.o: /home/yareg/Documents/Projects/arithmeticLibrary/main.cpp
-CMakeFiles/run.dir/main.cpp.o: CMakeFiles/run.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/run.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/main.cpp.o -MF CMakeFiles/run.dir/main.cpp.o.d -o CMakeFiles/run.dir/main.cpp.o -c /home/yareg/Documents/Projects/arithmeticLibrary/main.cpp
+CMakeFiles/run.dir/src/main.cpp.o: CMakeFiles/run.dir/flags.make
+CMakeFiles/run.dir/src/main.cpp.o: /home/yareg/Documents/Projects/arithmeticLibrary/src/main.cpp
+CMakeFiles/run.dir/src/main.cpp.o: CMakeFiles/run.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/run.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run.dir/src/main.cpp.o -MF CMakeFiles/run.dir/src/main.cpp.o.d -o CMakeFiles/run.dir/src/main.cpp.o -c /home/yareg/Documents/Projects/arithmeticLibrary/src/main.cpp
 
-CMakeFiles/run.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yareg/Documents/Projects/arithmeticLibrary/main.cpp > CMakeFiles/run.dir/main.cpp.i
+CMakeFiles/run.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yareg/Documents/Projects/arithmeticLibrary/src/main.cpp > CMakeFiles/run.dir/src/main.cpp.i
 
-CMakeFiles/run.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yareg/Documents/Projects/arithmeticLibrary/main.cpp -o CMakeFiles/run.dir/main.cpp.s
+CMakeFiles/run.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yareg/Documents/Projects/arithmeticLibrary/src/main.cpp -o CMakeFiles/run.dir/src/main.cpp.s
 
 # Object files for target run
 run_OBJECTS = \
-"CMakeFiles/run.dir/main.cpp.o"
+"CMakeFiles/run.dir/src/main.cpp.o"
 
 # External object files for target run
 run_EXTERNAL_OBJECTS =
 
-run: CMakeFiles/run.dir/main.cpp.o
+run: CMakeFiles/run.dir/src/main.cpp.o
 run: CMakeFiles/run.dir/build.make
 run: CMakeFiles/run.dir/compiler_depend.ts
 run: CMakeFiles/run.dir/link.txt
