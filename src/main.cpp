@@ -2,6 +2,7 @@
 #include <string>
 
 #include "dataStructures/Structs.h"
+#include "Tests.h"
 
 namespace summer {
 
@@ -87,6 +88,8 @@ int main (int argc, char *argv[]) {
 
     std::cout << "Размер списка: " << lst.get_size() << std::endl;
     std::cout << "Первый элемент списка: " << lst[0] << std::endl;
+
+    test_list();
 
 
     return 0;

@@ -9,7 +9,6 @@ List<T>::List() {
 
 template<typename T>
 List<T>::~List() {
-    std::cout << "Деструктор списка сработал" << std::endl;
 }
 
 template<typename T>
