@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/src/main.cpp.o: \
- /home/yareg/Documents/Projects/arithmeticLibrary/src/main.cpp \
+CMakeFiles/main.dir/src/tests.cpp.o: \
+ /home/yareg/Documents/Projects/arithmeticLibrary/src/tests.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14.2.1/iostream \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -142,7 +142,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/14.2.1/bits/locale_facets.tcc \
  /usr/include/c++/14.2.1/bits/basic_ios.tcc \
  /usr/include/c++/14.2.1/bits/ostream.tcc /usr/include/c++/14.2.1/istream \
- /usr/include/c++/14.2.1/bits/istream.tcc \
+ /usr/include/c++/14.2.1/bits/istream.tcc /usr/include/c++/14.2.1/cassert \
+ /usr/include/assert.h \
  /home/yareg/Documents/Projects/arithmeticLibrary/src/dataStructures/Structs.h \
- /home/yareg/Documents/Projects/arithmeticLibrary/src/dataStructures/Structs.tpp \
- /home/yareg/Documents/Projects/arithmeticLibrary/src/Tests.h
+ /home/yareg/Documents/Projects/arithmeticLibrary/src/dataStructures/Structs.tpp

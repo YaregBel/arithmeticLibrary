@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/yareg/Documents/Projects/arithmeticLibrary/src/Tests.cpp" "CMakeFiles/main.dir/src/Tests.cpp.o" "gcc" "CMakeFiles/main.dir/src/Tests.cpp.o.d"
   "/home/yareg/Documents/Projects/arithmeticLibrary/src/dataStructures/Structs.cpp" "CMakeFiles/main.dir/src/dataStructures/Structs.cpp.o" "gcc" "CMakeFiles/main.dir/src/dataStructures/Structs.cpp.o.d"
   "/home/yareg/Documents/Projects/arithmeticLibrary/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   "" "main" "gcc" "CMakeFiles/main.dir/link.d"

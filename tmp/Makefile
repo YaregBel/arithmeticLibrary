@@ -149,6 +149,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/Tests.o: src/Tests.cpp.o
+.PHONY : src/Tests.o
+
+# target to build an object file
+src/Tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Tests.cpp.o
+.PHONY : src/Tests.cpp.o
+
+src/Tests.i: src/Tests.cpp.i
+.PHONY : src/Tests.i
+
+# target to preprocess a source file
+src/Tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Tests.cpp.i
+.PHONY : src/Tests.cpp.i
+
+src/Tests.s: src/Tests.cpp.s
+.PHONY : src/Tests.s
+
+# target to generate assembly for a file
+src/Tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Tests.cpp.s
+.PHONY : src/Tests.cpp.s
+
 src/dataStructures/Structs.o: src/dataStructures/Structs.cpp.o
 .PHONY : src/dataStructures/Structs.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... structs"
+	@echo "... src/Tests.o"
+	@echo "... src/Tests.i"
+	@echo "... src/Tests.s"
 	@echo "... src/dataStructures/Structs.o"
 	@echo "... src/dataStructures/Structs.i"
 	@echo "... src/dataStructures/Structs.s"

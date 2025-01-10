@@ -1,1 +1,1 @@
-/bin/c++ -Wl,--dependency-file=CMakeFiles/main.dir/link.d CMakeFiles/main.dir/src/main.cpp.o CMakeFiles/main.dir/src/dataStructures/Structs.cpp.o -o main
+/bin/c++ -Wl,--dependency-file=CMakeFiles/main.dir/link.d CMakeFiles/main.dir/src/main.cpp.o CMakeFiles/main.dir/src/dataStructures/Structs.cpp.o CMakeFiles/main.dir/src/Tests.cpp.o -o main
