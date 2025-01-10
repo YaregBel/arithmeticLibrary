@@ -63,11 +63,13 @@ CMAKE_BINARY_DIR = /home/yareg/Documents/Projects/arithmeticLibrary/tmp
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/run.dir/all
+all: CMakeFiles/structs.dir/all
+all: CMakeFiles/main.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/run.dir/codegen
+codegen: CMakeFiles/structs.dir/codegen
+codegen: CMakeFiles/main.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,39 +77,73 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/run.dir/clean
+clean: CMakeFiles/structs.dir/clean
+clean: CMakeFiles/main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/run.dir
+# Target rules for target CMakeFiles/structs.dir
 
 # All Build rule for target.
-CMakeFiles/run.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles --progress-num=1,2 "Built target run"
-.PHONY : CMakeFiles/run.dir/all
+CMakeFiles/structs.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structs.dir/build.make CMakeFiles/structs.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structs.dir/build.make CMakeFiles/structs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles --progress-num=4,5 "Built target structs"
+.PHONY : CMakeFiles/structs.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/run.dir/rule: cmake_check_build_system
+CMakeFiles/structs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/structs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles 0
-.PHONY : CMakeFiles/run.dir/rule
+.PHONY : CMakeFiles/structs.dir/rule
 
 # Convenience name for target.
-run: CMakeFiles/run.dir/rule
-.PHONY : run
+structs: CMakeFiles/structs.dir/rule
+.PHONY : structs
 
 # codegen rule for target.
-CMakeFiles/run.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/codegen
-.PHONY : CMakeFiles/run.dir/codegen
+CMakeFiles/structs.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structs.dir/build.make CMakeFiles/structs.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles --progress-num=4,5 "Finished codegen for target structs"
+.PHONY : CMakeFiles/structs.dir/codegen
 
 # clean rule for target.
-CMakeFiles/run.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/clean
-.PHONY : CMakeFiles/run.dir/clean
+CMakeFiles/structs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structs.dir/build.make CMakeFiles/structs.dir/clean
+.PHONY : CMakeFiles/structs.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles --progress-num=1,2,3 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+.PHONY : main
+
+# codegen rule for target.
+CMakeFiles/main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles --progress-num=1,2,3 "Finished codegen for target main"
+.PHONY : CMakeFiles/main.dir/codegen
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

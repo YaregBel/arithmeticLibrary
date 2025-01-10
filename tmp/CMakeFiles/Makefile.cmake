@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/yareg/Documents/Projects/arithmeticLibrary/CMakeLists.txt"
-  "CMakeFiles/3.31.1/CMakeCCompiler.cmake"
-  "CMakeFiles/3.31.1/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.31.1/CMakeSystem.cmake"
+  "CMakeFiles/3.31.3/CMakeCCompiler.cmake"
+  "CMakeFiles/3.31.3/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.31.3/CMakeSystem.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -54,5 +54,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/run.dir/DependInfo.cmake"
+  "CMakeFiles/structs.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
   )

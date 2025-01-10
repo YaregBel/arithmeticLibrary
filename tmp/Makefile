@@ -94,8 +94,9 @@ all: cmake_check_build_system
 
 # The main codegen target
 codegen: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles /home/yareg/Documents/Projects/arithmeticLibrary/tmp//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Finished generating code"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yareg/Documents/Projects/arithmeticLibrary/tmp/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -123,24 +124,64 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named run
+# Target rules for targets named structs
 
 # Build rule for target.
-run: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run
-.PHONY : run
+structs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 structs
+.PHONY : structs
 
 # fast build rule for target.
-run/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-.PHONY : run/fast
+structs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structs.dir/build.make CMakeFiles/structs.dir/build
+.PHONY : structs/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+src/dataStructures/Structs.o: src/dataStructures/Structs.cpp.o
+.PHONY : src/dataStructures/Structs.o
+
+# target to build an object file
+src/dataStructures/Structs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structs.dir/build.make CMakeFiles/structs.dir/src/dataStructures/Structs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dataStructures/Structs.cpp.o
+.PHONY : src/dataStructures/Structs.cpp.o
+
+src/dataStructures/Structs.i: src/dataStructures/Structs.cpp.i
+.PHONY : src/dataStructures/Structs.i
+
+# target to preprocess a source file
+src/dataStructures/Structs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structs.dir/build.make CMakeFiles/structs.dir/src/dataStructures/Structs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dataStructures/Structs.cpp.i
+.PHONY : src/dataStructures/Structs.cpp.i
+
+src/dataStructures/Structs.s: src/dataStructures/Structs.cpp.s
+.PHONY : src/dataStructures/Structs.s
+
+# target to generate assembly for a file
+src/dataStructures/Structs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/structs.dir/build.make CMakeFiles/structs.dir/src/dataStructures/Structs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/dataStructures/Structs.cpp.s
+.PHONY : src/dataStructures/Structs.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -148,7 +189,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -156,7 +197,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -167,7 +208,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... run"
+	@echo "... main"
+	@echo "... structs"
+	@echo "... src/dataStructures/Structs.o"
+	@echo "... src/dataStructures/Structs.i"
+	@echo "... src/dataStructures/Structs.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
