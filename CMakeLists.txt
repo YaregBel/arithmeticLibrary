@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(SOURCE_EXE src/main.cpp)
 set(SOURCE_LIB src/dataStructures/Structs.cpp)
+set(SOURCE_LIB2 src/dataStructures/linked_list.cpp)
 set(SOURCE_TEST src/Tests.cpp)
 
 add_library(structs STATIC ${SOURCE_LIB})
